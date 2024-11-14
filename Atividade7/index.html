@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Login, Cadastro e Mensagem</title>
+</head>
+<body>
+  <h2>Cadastro</h2>
+  <form id="registerForm">
+    <label for="registerEmail">Email:</label>
+    <input type="email" id="registerEmail" required><br><br>
+    <label for="registerPassword">Senha:</label>
+    <input type="password" id="registerPassword" required><br><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" required><br><br>
+    <button type="submit">Entrar</button>
+  </form>
+
+  <button id="logoutButton" style="display: none;">Sair</button>
+
+  <h2>Área de Mensagens</h2>
+  <div id="messageArea" style="display: none;">
+    <form id="messageForm">
+      <label for="userMessage">Sua mensagem:</label><br>
+      <textarea id="userMessage" rows="4" cols="50" required></textarea><br><br>
+      <button type="submit">Salvar Mensagem</button>
+    </form>
+    <h3>Sua mensagem salva:</h3>
+    <p id="savedMessage"></p>
+  </div>
+
+  <p id="message"></p>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
